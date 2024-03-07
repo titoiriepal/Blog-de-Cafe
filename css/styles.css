@@ -228,3 +228,28 @@ img{
     padding-bottom: 3rem;
     margin-top: 4rem;
 }
+
+
+/* NOSOTROS.HTML */
+
+.sobre-nosotros{
+
+}
+
+@media (min-width: 768px) {
+    .sobre-nosotros{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto{
+        flex-basis: 50%; /*Asigna el 50% del elemento padre a cada uno de estos elementos, pero tienes que asignar el 100% de la anchura entre todos los elemntos*/
+    }
+
+    .sobre-nosotros{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
