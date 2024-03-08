@@ -151,12 +151,12 @@ img{
     }
 }
 
-.entrada{
+.entrada, .entrada_blog{
     border-bottom: 1px solid var(--gris);
     margin-bottom: 2rem;
 }
 
-.entrada:last-of-type{
+.entrada:last-of-type, .entrada_blog:last-of-type{
     border: none;
     margin-bottom: 0;
 }
