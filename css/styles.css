@@ -237,19 +237,53 @@ img{
 }
 
 @media (min-width: 768px) {
-    .sobre-nosotros{
+    /* .sobre-nosotros{
         display: flex;
         gap: 2rem;
+        justify-content: space-between;
     }
 
     .sobre-nosotros__imagen,
     .sobre-nosotros__texto{
-        flex-basis: 50%; /*Asigna el 50% del elemento padre a cada uno de estos elementos, pero tienes que asignar el 100% de la anchura entre todos los elemntos*/
-    }
+        flex-basis: calc( 50% - 1rem); /*Asigna el 50% del elemento padre a cada uno de estos elementos, pero tienes que asignar el 100% de la anchura entre todos los elemntos. A cada elemento le quitamos un rem que, gracias al justify de space-between va a dar la separacion de 2rem entre ambos elementos
+    } */
 
     .sobre-nosotros{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
+}
+
+/* CURSOS.HTML */
+
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+@media (min-width: 768px) {
+    .curso{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.curso:last-of-type{
+    border-bottom: none;
+}
+
+.curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+
+.curso__informacion{
+    font-weight: 400;
+}
+
+.curso__label,
+.curso__informacion{
+    font-size:1.8rem;
 }
