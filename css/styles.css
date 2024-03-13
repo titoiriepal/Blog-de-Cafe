@@ -89,7 +89,7 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;/* Dos  valores posibles, primero es la posicion en el eje x y segundo la posicion en el ej y */
-
+    padding-top: 2rem;
 }
 
 .header__texto{
@@ -106,6 +106,25 @@ img{
 
 .barra{
     padding-top: 4rem;
+}
+
+.barra-cristal{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow:
+        5.8px 4.1px 3.4px rgba(168, 167, 167, 0.059),
+        14.7px 10.3px 8.6px rgba(168, 167, 167, 0.084),
+        29.9px 21.1px 17.5px rgba(168, 167, 167, 0.106),
+        61.7px 43.4px 36.1px rgba(168, 167, 167, 0.131),
+        169px 119px 99px rgba(168, 167, 167, 0.19);
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 2px;
+    border-left: 3px solid rgba( 255, 255, 255, 0.10 );
+    border-bottom: 3px solid rgba( 255, 255, 255, 0.35 );
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
